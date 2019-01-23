@@ -126,10 +126,12 @@ def triangle_upside_down(r):
     #   defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
     for k in range(r):
-        for j in range(k, 0, -1):
+        for _ in range(k):
             print(' ', end='')
-
-        print(k)
+        for m in range(1):
+            for l in range(r):
+                print(l + 1, end='')
+        print()
 
 
 def run_test_vee():
