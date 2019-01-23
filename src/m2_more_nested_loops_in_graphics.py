@@ -52,9 +52,10 @@ def draw_upside_down_wall(rectangle, n, window):
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #     Some tests are already written for you (above).
-    # -------------------------------------------------------------------------
     for k in range(n):
 
+        rectangle.attach_to(window)
+        window.render()
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
